@@ -2,6 +2,8 @@ import React from 'react';
 import './LoginForm.css';
 import { FaUserAlt } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
 const LoginForm =() => {
     return (
         <div className='wrapper'>
@@ -12,8 +14,16 @@ const LoginForm =() => {
                     <FaUserAlt  className='icon' />
                 </div>
                 <div className="input-box">
+                    <input type="email" placeholder='Email' required/>
+                    <MdEmail   className='icon' />
+                </div>
+                <div className="input-box">
                     <input type="password" placeholder='Password' required/>
                     <FaLock className='icon' />
+                </div>
+                <div className="input-box">
+                    <input type="tel" placeholder='Phone Number' required/>
+                    <FaPhone className='icon' />
                 </div>
                 <div className="remember-forgot">
                     <label>
