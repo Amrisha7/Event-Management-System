@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Organizer Registration Form</title>
+</head>
+<body>
+  <h1>Organizer Registration Form</h1>
+  <form id="organizerForm" enctype="multipart/form-data">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    </div>
+    <div>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <label for="certificates">Upload Certificates:</label>
+      <input type="file" id="certificates" name="certificates" multiple accept=".pdf">
+    </div>
+    <div>
+      <label for="venueImages">Upload Your Venue Images:</label>
+      <input type="file" id="venueImages" name="venueImages" multiple accept="image/*">
+    </div>
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('organizerForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(form);
+      // Add additional form data processing here (e.g., validation, AJAX request)
+    });
+  </script>
+</body>
+</html>
