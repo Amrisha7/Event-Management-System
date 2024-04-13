@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image{
+    background-image: url("https://th.bing.com/th/id/R.9efce46d88d83f2902e77765157d5d09?rik=6xDOeDkLmxKOWw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-d2s5t0rs0wM%2fVOp83He3lZI%2fAAAAAAAADCw%2fIkTjZ4Rw22I%2fs1600%2fplain-wallpapers-hd-purple-android-apps-on-google-play.jpg&ehk=3opR6%2bLecXv%2bVv3AuHgGzzr5VO9HJFsZniMlIr%2fd2Gc%3d&risl=&pid=ImgRaw&r=0");
+    filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bg-text{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(254, 254, 254);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    font: 1.5em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+form{
+    margin: 0 auto;
+    width: 70%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border: 1em;
+}
+
+fieldset{
+    border: 1px solid lightgray;
+    margin: 10px;
+}
+
+legend{
+    font-weight: 700;
+}
+
+div + div{
+    margin-top: 1em;
+}
+
+input, textarea{
+    width: 200px;
+    border: 1px solid #500444;
+    
+}
+
+textarea{
+    vertical-align: top;
+    height: 12em;
+    resize: vertical;
+}
+
+button{
+    margin: .5em;
+    font-size: 1em;
+    text-transform: capitalize;
+    background-color: rgb(52, 4, 78);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#submitbutton{
+    display: flex;
+    justify-content: center;
+}
